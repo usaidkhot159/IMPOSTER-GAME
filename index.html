@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎭 IMPOSTER — Who Is Lying?</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/typography.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/screens.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <!-- Atmospheric background -->
+    <div class="bg-grid"></div>
+    <div class="bg-vignette"></div>
+    <div class="particles" id="particles"></div>
+
+    <!-- Screens rendered by JS -->
+    <div id="screen-container"></div>
+
+    <!-- Toast notifications -->
+    <div id="toast-container"></div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti-canvas"></canvas>
+  </div>
+
+  <!-- Game Scripts -->
+  <script src="js/data/words.js"></script>
+  <script src="js/data/categories.js"></script>
+  <script src="js/data/scoring.js"></script>
+  <script src="js/utils/helpers.js"></script>
+  <script src="js/utils/storage.js"></script>
+  <script src="js/utils/audio.js"></script>
+  <script src="js/utils/confetti.js"></script>
+  <script src="js/utils/particles.js"></script>
+  <script src="js/utils/theme.js"></script>
+  <script src="js/utils/hints.js"></script>
+  <script src="js/utils/a11y.js"></script>
+  <script src="js/core/state.js"></script>
+  <script src="js/core/router.js"></script>
+  <script src="js/core/history.js"></script>
+  <script src="js/core/engine.js"></script>
+  <script src="js/screens/splash.js"></script>
+  <script src="js/screens/menu.js"></script>
+  <script src="js/screens/setup.js"></script>
+  <script src="js/screens/playerNames.js"></script>
+  <script src="js/screens/roleReveal.js"></script>
+  <script src="js/screens/clueRound.js"></script>
+  <script src="js/screens/voting.js"></script>
+  <script src="js/screens/voteResult.js"></script>
+  <script src="js/screens/imposterGuess.js"></script>
+  <script src="js/screens/roundResult.js"></script>
+  <script src="js/screens/gameOver.js"></script>
+  <script src="js/screens/stats.js"></script>
+  <script src="js/screens/howToPlay.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
