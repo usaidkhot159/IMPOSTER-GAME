@@ -1,0 +1,17 @@
+@media (max-width: 480px) {
+  .screen-inner { gap: var(--sp-4); }
+  .card { padding: var(--sp-6); }
+  .btn-xl { padding: 16px 32px; font-size: var(--text-md); }
+  .splash-name { font-size: 3rem; }
+}
+
+@media (min-height: 800px) {
+  .screen-inner { gap: var(--sp-8); }
+}
+
+@media (max-height: 600px) {
+  .screen { padding: var(--sp-3); }
+  .screen-inner { gap: var(--sp-3); }
+  .card { padding: var(--sp-5); }
+  .role-icon { font-size: 3rem; }
+}
