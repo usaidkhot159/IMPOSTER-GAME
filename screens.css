@@ -1,0 +1,188 @@
+/* ── Splash ── */
+.splash-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-4);
+}
+.splash-icon {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+.splash-mask {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+.splash-name {
+  font-size: var(--text-4xl);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+.splash-tagline {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--smoke);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.splash-loader {
+  width: 200px;
+  height: 2px;
+  background: var(--shadow);
+  border-radius: var(--r-full);
+  overflow: hidden;
+  margin-top: var(--sp-8);
+}
+.splash-loader-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--uv), var(--uv-bright));
+  border-radius: var(--r-full);
+  animation: splash-load 1.8s var(--ease-out) forwards;
+}
+@keyframes splash-load { from { width: 0 } to { width: 100% } }
+
+/* ── Role Reveal ── */
+.role-card-civilian {
+  border-color: var(--emerald);
+  box-shadow: var(--shadow-card), 0 0 60px var(--emerald-glow), 0 0 100px rgba(5,150,105,0.1);
+}
+.role-card-imposter {
+  border-color: var(--crimson);
+  box-shadow: var(--shadow-card), 0 0 60px var(--crimson-glow), 0 0 100px rgba(220,38,38,0.1);
+}
+.role-icon {
+  font-size: 5rem;
+  line-height: 1;
+  display: block;
+  text-align: center;
+}
+.word-reveal {
+  font-size: var(--text-3xl);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--pure);
+  text-align: center;
+  background: linear-gradient(135deg, var(--emerald-bright), var(--uv-bright));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.word-hidden-bar {
+  width: 160px;
+  height: 32px;
+  background: var(--crimson-soft);
+  border: 1px solid var(--crimson);
+  border-radius: var(--r-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 auto;
+}
+
+/* ── Voting ── */
+.vote-tally {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.vote-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: var(--r-full);
+  background: var(--crimson);
+  box-shadow: 0 0 6px var(--crimson-glow);
+  animation: badge-pop 0.3s var(--ease-bounce) both;
+}
+
+/* ── Round result ── */
+.result-banner {
+  padding: var(--sp-6) var(--sp-8);
+  border-radius: var(--r-lg);
+  text-align: center;
+}
+.result-banner-imposter {
+  background: linear-gradient(135deg, rgba(220,38,38,0.15), rgba(220,38,38,0.05));
+  border: 1px solid rgba(220,38,38,0.4);
+}
+.result-banner-civilian {
+  background: linear-gradient(135deg, rgba(5,150,105,0.15), rgba(5,150,105,0.05));
+  border: 1px solid rgba(5,150,105,0.4);
+}
+
+/* ── Stats ── */
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sp-1);
+  flex: 1;
+}
+.stat-block-value {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--pure);
+}
+.stat-block-label {
+  font-size: var(--text-xs);
+  color: var(--smoke);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: var(--font-mono);
+}
+
+/* ── Player list item ── */
+.player-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-4);
+  padding: var(--sp-3) var(--sp-4);
+  background: var(--shadow);
+  border: 1px solid var(--mist);
+  border-radius: var(--r-md);
+  transition: all var(--t-base);
+}
+.player-list-item:hover { border-color: var(--smoke); }
+
+/* ── Guess input ── */
+.guess-input-wrap {
+  position: relative;
+  width: 100%;
+}
+.guess-input {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 0.05em;
+}
+
+/* ── How to play ── */
+.how-step {
+  display: flex;
+  gap: var(--sp-4);
+  align-items: flex-start;
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--mist);
+}
+.how-step:last-child { border-bottom: none; }
+.how-step-num {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--r-full);
+  background: var(--uv-soft);
+  border: 1px solid var(--uv);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--uv-bright);
+  flex-shrink: 0;
+}
