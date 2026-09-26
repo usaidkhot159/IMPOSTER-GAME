@@ -1,0 +1,67 @@
+:root {
+  /* ── Palette: Deep Violet Noir ── */
+  --ink:        #0A0812;   /* near-black with violet tint */
+  --void:       #100D1A;   /* card background */
+  --shadow:     #1A1528;   /* elevated surfaces */
+  --mist:       #2B2440;   /* borders, dividers */
+  --smoke:      #4A4268;   /* muted text, placeholders */
+  --silver:     #9E97BE;   /* secondary text */
+  --ghost:      #D4CFEA;   /* primary text */
+  --pure:       #F0EDF8;   /* headings, highlights */
+
+  /* ── Accent: Electric Ultraviolet + Crimson ── */
+  --uv:         #7C3AED;   /* primary accent — electric violet */
+  --uv-bright:  #A855F7;   /* hover state */
+  --uv-glow:    rgba(124,58,237,0.35);
+  --uv-soft:    rgba(124,58,237,0.12);
+
+  --crimson:    #DC2626;   /* imposter red */
+  --crimson-bright: #F87171;
+  --crimson-glow: rgba(220,38,38,0.35);
+  --crimson-soft: rgba(220,38,38,0.12);
+
+  --emerald:    #059669;   /* civilian green */
+  --emerald-bright: #34D399;
+  --emerald-glow: rgba(5,150,105,0.35);
+  --emerald-soft: rgba(5,150,105,0.12);
+
+  --gold:       #D97706;   /* scoring / wins */
+  --gold-bright: #FCD34D;
+  --gold-glow:  rgba(217,119,6,0.35);
+
+  --cyan:       #0891B2;   /* info / hints */
+  --cyan-bright: #22D3EE;
+
+  /* ── Typography ── */
+  --font-display: 'Syne', system-ui, sans-serif;
+  --font-mono:    'Space Mono', monospace;
+
+  --text-xs:   0.65rem;
+  --text-sm:   0.8rem;
+  --text-base: 1rem;
+  --text-md:   1.15rem;
+  --text-lg:   1.35rem;
+  --text-xl:   1.7rem;
+  --text-2xl:  2.2rem;
+  --text-3xl:  3rem;
+  --text-4xl:  4.5rem;
+
+  /* ── Spacing ── */
+  --sp-1: 4px;  --sp-2: 8px;  --sp-3: 12px; --sp-4: 16px;
+  --sp-5: 20px; --sp-6: 24px; --sp-8: 32px; --sp-10: 40px;
+  --sp-12: 48px; --sp-16: 64px;
+
+  /* ── Radii ── */
+  --r-sm: 6px; --r-md: 12px; --r-lg: 18px; --r-xl: 28px; --r-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-uv:  0 0 40px var(--uv-glow), 0 0 80px rgba(124,58,237,0.15);
+  --shadow-card: 0 4px 24px rgba(0,0,0,0.5), 0 1px 0 rgba(255,255,255,0.04) inset;
+  --shadow-btn:  0 2px 12px rgba(0,0,0,0.4);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:  cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-fast: 150ms; --t-base: 250ms; --t-slow: 400ms; --t-drama: 700ms;
+}
